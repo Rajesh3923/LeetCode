@@ -16,12 +16,10 @@ public:
 	            v.push_back(i+1);
 	        }
 	        
-	    }if(!(v.empty())){
-	        return v;
-	    }else{
+	    }
 	       return v;
 	        
-	    };
+	    
 	}
 };
 
