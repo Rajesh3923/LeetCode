@@ -14,13 +14,12 @@ bool fascinating(int n) {
     long s = n;
     string str = to_string(n) + to_string(2 * n) + to_string(3 * n);
     
-    // Check if the concatenated string contains all digits from 1 to 9 exactly once
     if (str.length() != 9) {
         return false;
     }
 
     for (char digit = '1'; digit <= '9'; digit++) {
-        if (str.find(digit) == string::npos) {
+        if (str.find(digit) == -1) {
             return false;
         }
     }
