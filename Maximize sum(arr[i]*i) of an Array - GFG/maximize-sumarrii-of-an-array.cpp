@@ -14,7 +14,7 @@ class Solution{
         s = (s + 1LL * a[i] * i) % MOD; // Use 1LL to ensure long long multiplication
     }
     
-    return static_cast<int>(s); }
+    return s; }
 };
 
 //{ Driver Code Starts.
